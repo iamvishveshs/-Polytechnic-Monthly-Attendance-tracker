@@ -14,5 +14,5 @@ This project is developed for polytechnic colleges to track the attendance of st
 - Add Teachers, Subjects And Students
 
 ## Admin user credentials
-**Email** - admin@gmail.com
-**password** - admin@123
+**Email** -** admin@gmail.com**
+**password** - **admin@123**
