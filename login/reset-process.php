@@ -32,8 +32,8 @@ if (isset($_POST["sendOtp"])) {
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
-            $mail->Username = "vishvesh482003@gmail.com";//Enter your email
-            $mail->Password = "ksmociiqfsfasxqw";//go to gmail and generate app password
+            $mail->Username = "demo@gmail.com";//Enter your email
+            $mail->Password = "Your_app_password_generated_from_gamil";//go to gmail and generate app password
 
             $mail->setFrom("eg@gmail.com","Attendance tracker");
             $mail->addAddress($email, " ");//Recievers email
