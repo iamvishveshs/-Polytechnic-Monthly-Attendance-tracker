@@ -19,8 +19,13 @@
                 </span>
                 <img class="img-profile rounded-circle" src="../assets/img/undraw_profile.svg">
             </a>
+            
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="./updateDetails.php">
+                    Change Details
+                </a>
+                <br>
                 <a class="dropdown-item" href="./logout.php" data-toggle="modal" data-target="#logoutModal">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                     Logout
