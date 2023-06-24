@@ -69,8 +69,9 @@ if ($_REQUEST['name'] == "addAttendance") {
                         $arr .= ' <tr>
                                                     <td><input type"text" name="studentId[]" value="' . $row['student_id'] . '" hidden>' . $row['student_name'] . ' </td>
                                                     <td>' . $row['sbrn'] . '</td>
-                                                    <td><input type"text" name="totalclasses[]" value="' . $op4 . '" class="classesS['.$i.']" pattern="[0-9.]+" title="only numbers are allowed [0-9]" required></td>
-                                                    <td><input type"text" name="attendedclasses[]" class="attendedS['.$i.']" id="S['.$i.']" pattern="[0-9.]+" title="only numbers are allowed [0-9]" oninput="check(this.id)" required><br>
+                                                    <td><input type"text" name="totalclasses[]" value="' . $op4 . '" class="classesS['.$i.']" id="S['.$i.']" pattern="[0-9.]+" title="only numbers are allowed [0-9]" oninput="checkClasses(this.id)" required><br>
+                                                    <span class="alertC['.$i.'] text-danger"></span></td>
+                                                    <td><input type"text" name="attendedclasses[]" class="attendedS['.$i.']" id="S['.$i.']" pattern="[0-9.]+" title="only numbers are allowed [0-9]" oninput="checkAttended(this.id)" required><br>
                                                     <span class="alertS['.$i.'] text-danger"></span></td>
                                                 
                                                 </tr>';
@@ -149,8 +150,9 @@ if ($_REQUEST['name'] == "showAttendance") {
                             $arr .= ' <tr>
                             <td><input type"text" name="studentId[]" value="' . $row['student_id'] . '" hidden>' . $row['student_name'] . ' </td>
                             <td>' . $row['sbrn'] . '</td>
-                            <td><input type"text" name="totalclasses[]" value="' . $attendance[0] . '" class="classesS['.$i.']" pattern="[0-9.]+" title="only numbers are allowed [0-9]" required></td>
-                            <td><input type"text" name="attendedclasses[]" value="' . $attendance[1] . '"  class="attendedS['.$i.']" id="S['.$i.']" pattern="[0-9.]+" title="only numbers are allowed [0-9]" oninput="check(this.id)" required><br>
+                            <td><input type"text" name="totalclasses[]" value="' . $attendance[0] . '"  class="classesS['.$i.']" id="S['.$i.']" pattern="[0-9.]+" title="only numbers are allowed [0-9]" oninput="checkClasses(this.id)" required><br>
+                            <span class="alertC['.$i.'] text-danger"></span></td></td>
+                            <td><input type"text" name="attendedclasses[]" value="' . $attendance[1] . '"  class="attendedS['.$i.']" id="S['.$i.']" pattern="[0-9.]+" title="only numbers are allowed [0-9]" oninput="checkAttended(this.id)" required><br>
                             <span class="alertS['.$i.'] text-danger"></span></td>
                                                     
                                                     </tr>';
