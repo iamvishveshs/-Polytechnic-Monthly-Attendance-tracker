@@ -169,18 +169,43 @@ error_reporting(E_ALL);
 
         <?php require("scripts.php"); ?>
         <script type="text/javascript">
-        function check(id) {
-            var classes = document.getElementsByClassName("classes"+id+"")[0].value;
-            var attended = document.getElementsByClassName("attended"+id+"")[0].value;
+        function checkAttended(id) {
+            var classes = parseInt(document.getElementsByClassName("classes"+id+"")[0].value);
+            var attended = parseInt(document.getElementsByClassName("attended"+id+"")[0].value);
             var alert = document.getElementsByClassName("alert"+id+"")[0];
             if(attended>classes)
             {
                 alert.innerText="Attended classes can't be greater than total classes";
+                document.getElementsByClassName("attended"+id+"")[0].value=0;
+            }
+            else if(isNaN(document.getElementsByClassName("attended"+id+"")[0].value))
+            {
+                alert.innerText="Only numbers [0-9] are allowed.";
+                document.getElementsByClassName("attended"+id+"")[0].value=0;
             }
             else{
                 alert.innerText="";
             }
-            
+        }
+
+        function checkClasses(id) {
+            var classes = parseInt(document.getElementsByClassName("classes"+id+"")[0].value);
+            var matches = id.match(/(\d+)/);
+                if (matches) {
+                    var aid=matches[0];
+                }
+            var alertC = document.getElementsByClassName("alertC["+aid+"]")[0];
+            if (isNaN(document.getElementsByClassName("classes"+id+"")[0].value))
+            {
+                
+                
+                alertC.innerText="Only numbers [0-9] are allowed.";
+                document.getElementsByClassName("classes"+id+"")[0].value=1;
+            }
+            else
+            {
+                alertC.innerText="";
+            }
         }
     </script>
 </body>
