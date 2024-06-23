@@ -1,5 +1,5 @@
 <?php
-require("check.php");
+require ("check.php");
 
 /* to see the attendance */
 //Checking if the data is sent from the calling script or not
@@ -7,7 +7,7 @@ if ($_REQUEST['name'] == "showAttendance") {
     //Getting sem 
     $sem = $_REQUEST['sem'];
     //Creating table name for queries related to attendance 
-    $tableName = "attendance" . $sem . "thsem";
+    $tableName = "Attendance" . $sem . "thSem";
     //Query to get the names of the table from database whose name is exactly as same as $tableName
     $result = mysqli_query($conn, "SHOW TABLES LIKE '" . $tableName . "'");
     $tableExist = mysqli_num_rows($result) > 0;
@@ -18,7 +18,7 @@ if ($_REQUEST['name'] == "showAttendance") {
         //Getting the value from where to divide the students into two groups
         $divide = $_REQUEST['divide'];
         //Creating table name for queries related to attendance 
-        $tableName = "attendance" . $sem . "thsem";
+        $tableName = "Attendance" . $sem . "thSem";
         //student_id of the last student of Group A
         $lastStudentId = 0;
         //Getting the data from attendance table
@@ -198,7 +198,7 @@ if ($_REQUEST['name'] == "showAttendance") {
             <div id="printable"  style="text-align:center;margin:0 10px;">
             <div class="center">
             <b>
-            <p class="mb-0">Govt. Polytechnic Hamirpur
+            <p class="mb-0">ABC College of Engineering
             </p>
             <p class="mb-0">Attendance record upto ' . $date->format("Y-m-d") . ' (' . $sem . '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sem <span class="text-capitalize">' . $department . '</span> ) 
             </p>
@@ -432,7 +432,7 @@ if ($_REQUEST['name'] == "showAttendance") {
                 </table>
                 </div>
                 <div style="text-align:left">
-                <p>Endst.no.GPH/Attendance Position/' . $sem . '&nbsp;&nbsp;&nbsp;&nbsp; semester ' . $_SESSION["CteacherDept"] . ' Engg./</p>
+                <p>Endst.no.ABCCE/Attendance Position/' . $sem . '&nbsp;&nbsp;&nbsp;&nbsp; semester ' . $_SESSION["CteacherDept"] . ' Engg./</p>
                 <div style="display:flex;justify-content:space-between;font-size: 0.9em;align-items: flex-end;">
                     <div>
                         <div>

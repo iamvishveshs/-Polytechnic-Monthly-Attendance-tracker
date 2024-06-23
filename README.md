@@ -1,11 +1,9 @@
 # Monthly attendance tracker
 ## _Developed by Vishvesh Shivam_
 
-### Project Overview: Polytechnic College Attendance Tracker
+### Project Overview:  College Attendance Tracker
 
-This project aims to assist polytechnic colleges in efficiently tracking and managing student attendance on a monthly basis. It provides an automated solution to generate attendance reports, ensuring that students' attendance is monitored and necessary actions can be taken for those with low attendance.
-
-
+This project aims to assist  colleges in efficiently tracking and managing student attendance on a monthly basis. It provides an automated solution to generate attendance reports, ensuring that students' attendance is monitored and necessary actions can be taken for those with low attendance.
 
 ### Features
 
@@ -65,10 +63,66 @@ This project aims to assist polytechnic colleges in efficiently tracking and man
    - Teachers and administrators review the report.
    - Take necessary actions for students with low attendance (e.g., counseling, parent meetings).
 
-## Admin user credentials
-| Email | admin@gmail.com |
-| password | admin@123 |
+
+## Tech Stack
+
+**Client:** HTML, CSS, Bootstrap, Javascript, Jquery
+
+**Server:** PHP
+
+**Database:** MySQL 
+
+
+## Database Configuration
+
+#### Config areas
+change these files to run the website smoothly
+
+`/login/db.php`
+`/admin/db.php`
+`/classTeacher/db.php`
+`/teacher/db.php`
+
+
+| Key | value     | 
+| :-------- | :------- | 
+| `$servername` | `MySQL Hostname e.g. localhost` | 
+| `$username` | `MySQL username e.g root` |
+| `$password` | `MySQL password` |
+| `$db` | `ams` |
+
+
+## User Authentication
+
+#### Demo Accounts
+
+
+| Role | Email     | Password                |
+| :-------- | :------- | :------------------------- |
+| `Admin` | `admin@gmail.com` |  `admin`|
+| `Class Teacher` | `teacher1@gmail.com` |  `admin`|
+| `Teacher` | `teacher2@gmail.com` |  `admin`|
+
+#### Note:
+
+To use the `Forgot password` functinality 
+  Create a **New account** by logging into admin panel
+  ```admin
+  https://yoursite.com/admin
+  ```
+```
+Add new teacher (Fill details) 
+```
+Also change the credentials in `/login/reset-password.php`
+
+| Key | Value     | 
+| :-------- | :------- |
+| `$mail->Username` | `Your Email Address` | 
+| `$mail->Password` | `generate app password from google account` |
+
+go to gmail and generate app password here 
+https://myaccount.google.com/apppasswords
 
 ### Conclusion
 
-The Polytechnic College Attendance Tracker is a comprehensive tool designed to streamline the process of attendance tracking and management. By generating detailed, actionable reports and highlighting students with attendance issues, it supports educational institutions in maintaining high standards of attendance and academic performance.
+The College Attendance Tracker is a comprehensive tool designed to streamline the process of attendance tracking and management. By generating detailed, actionable reports and highlighting students with attendance issues, it supports educational institutions in maintaining high standards of attendance and academic performance.

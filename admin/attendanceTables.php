@@ -1,8 +1,5 @@
 <?php
 require("check.php");
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,18 +71,18 @@ error_reporting(E_ALL);
                                     <tbody>
                                         <?php
                                         /*Getting names of the attendance tables which are created by Admin*/
-                                        $requestQuery = "show tables LIKE '%attendance%'";
+                                        $requestQuery = "show tables LIKE '%Attendance%'";
                                         if ($requestResult = mysqli_query($conn, $requestQuery)) {
                                             while ($requestRow = mysqli_fetch_assoc($requestResult)) {
                                                 ?>
                                                 <tr>
                                                     <td>
-                                                        <?php /*displaying the table anem*/echo $requestRow['Tables_in_ams (%attendance%)']; ?>
+                                                        <?php /*displaying the table anem*/echo $requestRow['Tables_in_if0_36774060_ams (%Attendance%)']; ?>
                                                     </td>
                                                     <td><!--Delete button will open a confirmation modal-->
                                                         <button type='button' class='btn btn-danger' data-toggle='modal'
                                                             data-target='#exampleModal'
-                                                            data-tablename="<?php echo $requestRow['Tables_in_ams (%attendance%)']; ?>">Drop
+                                                            data-tablename="<?php echo $requestRow['Tables_in_if0_36774060_ams (%Attendance%)']; ?>">Drop
                                                             Table</button>
                                                     </td>
                                                 </tr>

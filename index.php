@@ -9,14 +9,10 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  
 
   <!-- Vendor CSS Files -->
   <link href="assets/home/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/home/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 
   <link href="assets/home/css/style.css" rel="stylesheet">
 </head>
@@ -91,7 +87,7 @@
                   class="text-danger">reject</span> the request.</li>
               <li> This process can take upto 48 hours (2 Days).</li>
               <li> In case if the account is not approved even after 48 hours (2 Days) than you can contact admin at <a
-                  href="mailto:adminGPH@gmail.com">adminGPH@gmail.com</a>.</li>
+                  href="mailto:iamvishveshs@gmail.com">administrator</a>.</li>
               <li> If the account is approved than you can login with the same credentials that were filled by you at
                 the time of request submission.</li>
             </ul>
@@ -113,10 +109,10 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Govt. polytechnic Hamirpur</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><a href="https://iamvishveshs.github.io" target="_blank"><span>Vishvesh Shivam</span></a></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by Computer Engg. students
+      Developed by <a href="https://iamvishveshs.github.io" target="_blank"><span>Vishvesh Shivam</span></a>
       </div>
     </div>
   </footer><!-- End Footer -->

@@ -33,8 +33,7 @@ if(isset($_POST['checkOtp']))
 					<br>
 					<br>
 					<div class="py-4 alert">Enter new password</div><br><br>
-                    <input type="text" name="email" value="<?php echo $_REQUEST['email'] ?>" hidden>
-                    <input type="text" name="otp" value="<?php echo $_REQUEST['otp'] ?>" hidden>
+                    
 					<div class="wrap-input100 validate-input">
 						<input class="input100" type="password" name="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
             title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"

@@ -1,5 +1,8 @@
 <?php
 require("check.php");
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 /* Adding attendance the attendance */
 if (isset($_REQUEST['addAttendance']) && isset($_REQUEST['sem']) && isset($_REQUEST['scheme']) && isset($_REQUEST['subject']) && isset($_REQUEST['studentId']) && isset($_REQUEST['totalclasses']) && isset($_REQUEST['attendedclasses'])) {
 

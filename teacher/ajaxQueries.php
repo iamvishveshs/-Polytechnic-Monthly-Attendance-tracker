@@ -28,7 +28,7 @@ if ($_REQUEST['name'] == "addAttendance") {
     $op3 = $_REQUEST['scheme'];
     $op4 = $_REQUEST['total'];
     $sem = $_REQUEST['sem'];
-    $tableName = "attendance" . $sem . "thsem";
+    $tableName = "Attendance" . $sem . "thSem";
     $result = mysqli_query($conn, "SHOW TABLES LIKE '" . $tableName . "'");
     $tableExist = mysqli_num_rows($result) > 0;
     /*Checking if the table exists*/
@@ -98,7 +98,7 @@ if ($_REQUEST['name'] == "showAttendance") {
     $sem = $_REQUEST['sem'];
     $subjectId = $_REQUEST['subject'];
     $op3 = $_REQUEST['scheme'];
-    $tableName = "attendance" . $sem . "thsem";
+    $tableName = "Attendance" . $sem . "thSem";
     $result = mysqli_query($conn, "SHOW TABLES LIKE '" . $tableName . "'");
     $tableExist = mysqli_num_rows($result) > 0;
     /*Checking if the table exists*/

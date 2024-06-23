@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "./db.php";
 if(isset($_POST['checkOtp']))
 {
@@ -33,7 +34,7 @@ if(isset($_POST['checkOtp']))
 					<br>
 					<br>
 					<div class="py-4 alert">Enter OTP</div><br><br>
-                    <input type="text" name="email" value="<?php echo $_REQUEST['email'] ?>" hidden>
+                    
 					<div class="wrap-input100 validate-input">
 						<input class="input100" type="text" name="otp">
 						<span class="focus-input100" data-placeholder="otp"></span>
