@@ -5,6 +5,8 @@
 
 This project aims to assist  colleges in efficiently tracking and managing student attendance on a monthly basis. It provides an automated solution to generate attendance reports, ensuring that students' attendance is monitored and necessary actions can be taken for those with low attendance.
 
+![App Screenshot](https://github.com/iamvishveshs/iamvishveshs.github.io/blob/main/assets/jpeg/monthly-attendance-tracker.jpg?raw=true)
+
 ### Features
 
 1. **Monthly Attendance Tracking**:
